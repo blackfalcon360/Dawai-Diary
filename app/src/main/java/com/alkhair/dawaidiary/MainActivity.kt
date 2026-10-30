@@ -188,7 +188,7 @@ class MainActivity : Activity() {
     }
 
     private fun edit(hintText: String, value: String): EditText = EditText(this).apply {
-        hint = hintText; setText(value); textSize = 15f; singleLine = true
+        hint = hintText; setText(value); textSize = 15f; maxLines = 1
         setPadding(dp(12), dp(8), dp(12), dp(8))
     }
 
